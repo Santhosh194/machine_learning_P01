@@ -6,6 +6,8 @@ import os
 # Initialize app
 app = Flask(__name__)
 
+labels = ["setosa", "versicolor", "virginica"]
+
 # Load model and scaler
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
